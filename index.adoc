@@ -1,0 +1,67 @@
+= the Learn Ascii docs title
+:author: Tugbay Atilla
+:email: tugbayatilla@gmail.com
+:sectnums: 
+:toc: right
+:toclevels: 4
+:toc-title: My Content - 2by
+
+:revnumber: v0.1
+:revdate: 09.11.2022
+:revremark: First Draft
+
+:description: Learning Ascii docs
+:keywords: AsciiDoc
+:imagesdir: ./img
+
+this is the optional bla bla
+
+== First Section
+
+Some text in first section
+
+== Second Section
+
+more text for secind section
+
+=== sub of second section
+
+hell yeah
+
+* these are built-in attributes
+** my name is as author {author}
+** my first name is {firstname}
+** my last name is {lastname}
+** may email is {email}
+
+another list
+
+. these are built-in attributes 2
+.. my name is as author {author}
+.. my first name is {firstname}
+.. my last name is {lastname}
+.. may email is {email}
+
+
+image::image1.png[name of the image]
+
+this is inline image image:image1.png[name of the image, width=5%] and the text continues
+
+=== Another adoc file content will be displayed below.
+
+include::another.adoc[]
+
+
+:my_solution:
+
+ifdef::my_solution[]
+this is the content of my solution
+endif::[]
+
+
+:version: 2
+ifeval::[{version} > 1]
+version is bigger than 1 and is {version}
+endif::[]
+
+icon:file[] file icon

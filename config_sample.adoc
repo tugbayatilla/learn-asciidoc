@@ -1,0 +1,6 @@
+:url: https://dev.azure.com/igus-integrations/iERP/_git/Warehouse.Inventory.Services?path=/src/iERP.Warehouse.Inventory.Consumer/appsettings.orange.json
+
+[source,json]
+----
+include::{url}
+----
